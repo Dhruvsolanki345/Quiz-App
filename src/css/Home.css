@@ -1,0 +1,96 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #111;
+}
+
+.heading {
+    color: white;
+}
+
+.container{
+    display: flex;
+    padding: 20px;
+    width: 95%;
+    flex: 1;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #333;
+    color: white;
+}
+
+.main_content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.button_grp{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.prevbtn{
+    justify-content: flex-start;
+}
+
+.nextbtn{
+    justify-content: flex-end;
+}
+.button_grp button, .score_button, .reviewBtn button {
+    background-color: #955251;
+    color: white;
+    border: none;
+    margin: 65px 30px 15px 15px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.reviewBtn button {
+    display: none;
+    position: absolute;
+    bottom: 70px;
+    left: 30%;
+}
+
+.score{
+    background-color: transparent;
+    color: #4286f4;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+}
+
+.score_button{
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        position: relative;
+    }
+    .main_content {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+        background-color: #333;
+    }
+    .score, .score_button{
+        margin: 0 20px;
+        text-align: center;
+    }
+    .reviewBtn button {
+        display: block;
+    }
+}
